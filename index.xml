@@ -74,6 +74,7 @@
 &lt;li&gt;双击打开public/index.html 发现不能预览&lt;/li&gt;
 &lt;li&gt;因为public/index.html不能使用文件协议预览&lt;/li&gt;
 &lt;li&gt;请使用hugo server 预览&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
       
