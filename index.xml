@@ -46,6 +46,40 @@
     </item>
     
     <item>
+      <title>博客搭建</title>
+      <link>http://localhost:1313/post/hugo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Sat, 25 Apr 2020 14:01:36 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/hugo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid>
+      
+        <description>&lt;h1 id=&#34;如何用-hugo-搭建个人博课&#34;&gt;如何用 hugo 搭建个人博课&lt;/h1&gt;
+&lt;p&gt;Hugo 是Go语言实现的一个博客生成器 世界上最快的博客生成器&lt;/p&gt;
+&lt;h2 id=&#34;安装hugo&#34;&gt;安装Hugo&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://gohugo.io/getting-started/installing&#34;&gt;官网教程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Window安装方法&lt;/li&gt;
+&lt;li&gt;去&lt;a href=&#34;https://github.com/gohugoio/hugo/releases&#34;&gt;Hugo releases&lt;/a&gt; 网页下载http://hugo_xxx_windows-64bit.zip/&lt;/li&gt;
+&lt;li&gt;解压,把hugo.exe放到D:\Software\hugo\hugo.exe&lt;/li&gt;
+&lt;li&gt;把D:\Software\hugo\加到PATH&lt;/li&gt;
+&lt;li&gt;重启终端,运行hugo version查看版本&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;快速搭建出博客&#34;&gt;快速搭建出博客&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;进入&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;官方, 点击Quick Start快速开始&lt;/li&gt;
+&lt;li&gt;从Step2 开始抄代码, 直到Step 7&lt;/li&gt;
+&lt;li&gt;得到一个public的目录,这就是我们的博客站点&lt;/li&gt;
+&lt;li&gt;hugo server-D 可以预览草稿&lt;/li&gt;
+&lt;li&gt;hugo server 可以预览草稿&lt;/li&gt;
+&lt;li&gt;预览网站&lt;/li&gt;
+&lt;li&gt;双击打开public/index.html 发现不能预览&lt;/li&gt;
+&lt;li&gt;因为public/index.html不能使用文件协议预览&lt;/li&gt;
+&lt;li&gt;请使用hugo server 预览&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      
+    </item>
+    
+    <item>
       <title>开博大吉</title>
       <link>http://localhost:1313/post/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/</link>
       <pubDate>Sat, 25 Apr 2020 14:01:36 +0800</pubDate>
