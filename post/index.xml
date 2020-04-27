@@ -31,6 +31,15 @@
     
     <item>
       <title>开博大吉</title>
+      <link>http://localhost:1313/post/html/</link>
+      <pubDate>Sat, 25 Apr 2020 14:01:36 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/html/</guid>
+      <description>HTML入门1 HTML之父 是Tim Benrnes-lee, 我称为李爵士 他自己写了第一个浏览器 第一个服务器 用自己写的浏览器访问的自己的服务器 发明了www，同时发明了</description>
+    </item>
+    
+    <item>
+      <title>开博大吉</title>
       <link>http://localhost:1313/post/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/</link>
       <pubDate>Sat, 25 Apr 2020 14:01:36 +0800</pubDate>
       
