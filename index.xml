@@ -33,6 +33,96 @@
     
     <item>
       <title>开博大吉</title>
+      <link>http://localhost:1313/post/css/</link>
+      <pubDate>Thu, 30 Apr 2020 14:01:36 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/css/</guid>
+      
+        <description>&lt;h1 id=&#34;css知识总结&#34;&gt;CSS知识总结&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;css基础&lt;/li&gt;
+&lt;li&gt;css布局&lt;/li&gt;
+&lt;li&gt;css定位&lt;/li&gt;
+&lt;li&gt;css动画&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;css的基础语法&#34;&gt;css的基础语法&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;css的层叠样式是什么&lt;/li&gt;
+&lt;li&gt;可以多次对同一个选择器进行样式声明 课可以用不同选择器对同一个元素进行样式声明  可以用多个文件进行声明&lt;/li&gt;
+&lt;li&gt;css是艺术 你要用感性的思维理解&lt;/li&gt;
+&lt;li&gt;语法很简单&lt;/li&gt;
+&lt;li&gt;语法1:样式语法  选择器{属性:属性值;}&lt;/li&gt;
+&lt;li&gt;注意事项 所有符号都是英文符号 如果写错了 浏览器会警告 区分大小写 最后一个分号可以省略但是最后不要&lt;/li&gt;
+&lt;li&gt;语法2: at语法&lt;/li&gt;
+&lt;li&gt;@charset &amp;ldquo;UTF-8&amp;rdquo;; @import url(2.css);
+@media (min-width: 100px) and (max-width: 200px)&lt;/li&gt;
+&lt;li&gt;注意事项 @charset 必须放在第一行 前两个at必须以分号 结尾   charset是字符的意思  但UTF-8 是字符偏码&lt;/li&gt;
+&lt;li&gt;如何调试css&lt;/li&gt;
+&lt;li&gt;方法 使用vsCode Webstorm 看颜色 使用开发者工具看警告&lt;/li&gt;
+&lt;li&gt;如何使用开发者工具 找到你脑中的标签 看它是否有选择器 看它的样式是否被划掉 看它是否有警&lt;/li&gt;
+&lt;li&gt;Border调试法&lt;/li&gt;
+&lt;li&gt;步骤  怀疑某个元素有问题 就给它加个border border没出现 说明选择器错了或语法错了 border出现了 看是不是符合预期  bug解决了就可以删掉  记住css的border调试法相当也js log&lt;/li&gt;
+&lt;li&gt;新人的错误是 选择器拼错了 属性名拼错了  大小写错了 中文冒号 没加反花括号 没加单位&lt;/li&gt;
+&lt;li&gt;CRM 学习方法 抄 运行 改&lt;/li&gt;
+&lt;li&gt;理解文档流&lt;/li&gt;
+&lt;li&gt;块 内联 内联块 两个盒子模型&lt;/li&gt;
+&lt;li&gt;inline元素从左到右  到最右边才换行&lt;/li&gt;
+&lt;li&gt;block元素从上到下 每一个另起一行&lt;/li&gt;
+&lt;li&gt;inline-block也是ongoing左到右&lt;/li&gt;
+&lt;li&gt;宽度&lt;/li&gt;
+&lt;li&gt;liline宽度位内部niline元素的和 不能用width指定block默认自动计算宽度 可用width指定 inline-block 结合前两种&lt;/li&gt;
+&lt;li&gt;高度&lt;/li&gt;
+&lt;li&gt;inline高度有line-间接确定 跟height无关 block的高度右内部文档流元素觉得 可以设height  inline-block跟block 类似&lt;/li&gt;
+&lt;li&gt;overflow溢出&lt;/li&gt;
+&lt;li&gt;当内容大于容器&lt;/li&gt;
+&lt;li&gt;可用overflow来设置是否显示滚动条&lt;/li&gt;
+&lt;li&gt;auto是灵活设置 scroll是永远显示 hidden是直接溢出 visible是直接显示溢出 overflow分为overflow-x 和-y&lt;/li&gt;
+&lt;li&gt;两种盒模型&lt;/li&gt;
+&lt;li&gt;content-vox 内容盒 border-box是边框盒&lt;/li&gt;
+&lt;li&gt;margin合拼&lt;/li&gt;
+&lt;li&gt;父子margin 兄弟margin 合拼&lt;/li&gt;
+&lt;li&gt;如何阻止合拼&lt;/li&gt;
+&lt;li&gt;父子用padding/border挡住 overflow:hidden 挡住 display:flex,&lt;/li&gt;
+&lt;li&gt;兄弟可用inline-block消除&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;css布局-两种&#34;&gt;css布局 两种&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;固定宽度布局  一般宽度位960 1000 1024px&lt;/li&gt;
+&lt;li&gt;不固定宽度布局 主要靠文档流的原理来布局&lt;/li&gt;
+&lt;li&gt;布局的两种思路&lt;/li&gt;
+&lt;li&gt;从大到小 从小到大&lt;/li&gt;
+&lt;li&gt;有什么布局 有float布局 flex布局 grid布局&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;css定位&#34;&gt;css定位&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;css定位和布局区别就大了 布局是屏幕平面上的 定位是垂直于平幕的&lt;/li&gt;
+&lt;li&gt;一个div的分层 内联子元素 浮动文素 块级子元素 border background&lt;/li&gt;
+&lt;li&gt;新属性 - position 有五个值&lt;/li&gt;
+&lt;li&gt;static 默认值 relative 相对值 absolute 绝对值 fixed 固定值 sticky 粘滞定位&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;css的动画&#34;&gt;css的动画&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;定义 由许多静止的画面(帧)以一定的速度连续播放 肉眼因视觉的残像生成错觉&lt;/li&gt;
+&lt;li&gt;举个例子 将div从左往右移动 每过一段时间(setlnterval)将div移动以小段距离 直到目标地点&lt;/li&gt;
+&lt;li&gt;用transform(变形)&lt;/li&gt;
+&lt;li&gt;transform:translateX(0=&amp;gt;300px)&lt;/li&gt;
+&lt;li&gt;直接修改会被合成 需要等一会修改 transition过度属性可以自动脑补中间帧&lt;/li&gt;
+&lt;li&gt;比left性能好&lt;/li&gt;
+&lt;li&gt;有三种更新方法&lt;/li&gt;
+&lt;li&gt;js/css&amp;gt;样式&amp;gt;布局&amp;gt;绘制&amp;gt;合成&lt;/li&gt;
+&lt;li&gt;js/css&amp;gt;样式&amp;gt;绘制&amp;gt;合成&lt;/li&gt;
+&lt;li&gt;js/css&amp;gt;样式&amp;gt;合成&lt;/li&gt;
+&lt;li&gt;第一种，全走 div.remove()会触发当前消失 ,其他的元素relayout 第二种跳过layout 改变背景颜色 直接repaint+composite 第三种 跳过lalyout和paint 改变transform 只需compsoite 注意要看全屏查看效果&lt;/li&gt;
+&lt;li&gt;fransfoum的四个常用功能 位移translate 缩放 scale 旋转rotate 倾斜skew&lt;/li&gt;
+&lt;li&gt;经验 一般都需要配合transition过度&lt;/li&gt;
+&lt;li&gt;inline元素不支持transition 先变成block&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>开博大吉</title>
       <link>http://localhost:1313/post/html%E7%9A%84%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</link>
       <pubDate>Mon, 27 Apr 2020 14:01:36 +0800</pubDate>
       
