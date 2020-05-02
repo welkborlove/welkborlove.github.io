@@ -32,47 +32,7 @@
     </item>
     
     <item>
-      <title>《浅析 URL》</title>
-      <link>http://localhost:1313/post/url/</link>
-      <pubDate>Thu, 30 Apr 2020 14:01:36 +0800</pubDate>
-      
-      <guid>http://localhost:1313/post/url/</guid>
-      
-        <description>&lt;h1 id=&#34;url是什么&#34;&gt;URL是什么&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;协议+域名或IP+端口+路径+查询字符点+锚点&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;什么是ip&#34;&gt;什么是IP&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;只要你在互联网中 你就有至少一个IP&lt;/li&gt;
-&lt;li&gt;IP分为内网和外网&lt;/li&gt;
-&lt;li&gt;如何获取外网 你从电信租用宽带 在买个路由器  只要路由器连上电信的服务器 那么路由器就会有一个外网 比如14.17.32.211 这就是一个外网 就是你在互联网的地址&lt;/li&gt;
-&lt;li&gt;内网就是你路由器在你家创建一个内网 这个IP是192.168.23.2 然后路由器会给你每一个内网中的设备分配一个不同的IP  如电脑192.168.1.11 手机是192.168，1.12&lt;/li&gt;
-&lt;li&gt;路由器的功能&lt;/li&gt;
-&lt;li&gt;现在路由器有两个IP 一个外网IP 一个内网IP 内网IP中的设备可以互相访问 但不能直接访问外网 内网设备想要访问外网 就必须经过路由器中转 外网设备想要把内容送到内网 就必须通过路由器 也就是说内网和外网就像两个隔绝的空间  无法互通 联通点就是路由器&lt;/li&gt;
-&lt;li&gt;j个特殊的IP&lt;/li&gt;
-&lt;li&gt;127.0.0.1  localhost 通过hosts指定为自己 0.0.0.0表示设备&lt;/li&gt;
-&lt;li&gt;IP有了还需要什么 端口&lt;/li&gt;
-&lt;li&gt;一台机器可以提供很多服务&lt;/li&gt;
-&lt;li&gt;每个服务一个号码 这个号码叫做端口号 post&lt;/li&gt;
-&lt;li&gt;一台机器可以提供不同的服务 要提供HTTP服务最好使用80端口 要提供HTTPS服务最好使用443端口 要提供FTP服务最好使用21端口  一共有65535个端口&lt;/li&gt;
-&lt;li&gt;端口使用还有什么规则 0到1023 你只有拥有管理员权限后 才可以使用1024端口 比如http-server 默认使用8080端口 一个端口被占用了 你就只有使用别的端口&lt;/li&gt;
-&lt;li&gt;域名是什么 qq.com  域名就是对IP的别称&lt;/li&gt;
-&lt;li&gt;一个域名可以对应不同的IP 这个叫均衡负载 防止一台机器扛不住 一个IP可以对应不同的域名 这个叫共享主机&lt;/li&gt;
-&lt;li&gt;域名和IP是怎么样对应的&lt;/li&gt;
-&lt;li&gt;通过Chrome浏览器回向电信 联通 提供DNS的服务器 询问网址对应什么IP  电信 和联通会回答一个IP 然后Chrome才会想到对应IP 80/433端口 请求内容查看网址首页&lt;/li&gt;
-&lt;li&gt;为什么是89或者443端口&lt;/li&gt;
-&lt;li&gt;服务器默认的用80 提供http服务&lt;/li&gt;
-&lt;li&gt;服务器默认的用443 提供https服务&lt;/li&gt;
-&lt;li&gt;com是顶级域名 xiedaimala.com是二级域名 俗称一级域名  &lt;a href=&#34;http://www.xiedaimala.com&#34;&gt;www.xiedaimala.com&lt;/a&gt;是三级域名 俗称 二级域名&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>开博大吉</title>
+      <title>css基础</title>
       <link>http://localhost:1313/post/css/</link>
       <pubDate>Thu, 30 Apr 2020 14:01:36 +0800</pubDate>
       
@@ -148,6 +108,17 @@
 &lt;li&gt;transform:translateX(0=&amp;gt;300px)&lt;/li&gt;
 &lt;li&gt;直接修改会被合成 需要等一会修改 transition过度属性可以自动脑补中间帧&lt;/li&gt;
 &lt;li&gt;比left性能好&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;css渲染原理&#34;&gt;css渲染原理&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;浏览器渲染过程&lt;/li&gt;
+&lt;li&gt;根据HTML构建HTML树DOM&lt;/li&gt;
+&lt;li&gt;根据css构建css树(CSSOM)&lt;/li&gt;
+&lt;li&gt;将两颗树合成一颗树(render tree)&lt;/li&gt;
+&lt;li&gt;Layout布局(文档流 盒模型 计算大小和位置)&lt;/li&gt;
+&lt;li&gt;Paint绘制(把边框颜色 文字颜色 阴影等画出来)&lt;/li&gt;
+&lt;li&gt;Compose合成(根据层叠关系展示画面)
+&lt;img src=&#34;707.png&#34; alt=&#34;图片&#34;&gt;&lt;/li&gt;
 &lt;li&gt;有三种更新方法&lt;/li&gt;
 &lt;li&gt;js/css&amp;gt;样式&amp;gt;布局&amp;gt;绘制&amp;gt;合成&lt;/li&gt;
 &lt;li&gt;js/css&amp;gt;样式&amp;gt;绘制&amp;gt;合成&lt;/li&gt;
@@ -155,7 +126,54 @@
 &lt;li&gt;第一种，全走 div.remove()会触发当前消失 ,其他的元素relayout 第二种跳过layout 改变背景颜色 直接repaint+composite 第三种 跳过lalyout和paint 改变transform 只需compsoite 注意要看全屏查看效果&lt;/li&gt;
 &lt;li&gt;fransfoum的四个常用功能 位移translate 缩放 scale 旋转rotate 倾斜skew&lt;/li&gt;
 &lt;li&gt;经验 一般都需要配合transition过度&lt;/li&gt;
-&lt;li&gt;inline元素不支持transition 先变成block&lt;/li&gt;
+&lt;li&gt;inline元素不支持transition 先变成block
+&lt;img src=&#34;6.png&#34; alt=&#34;图片&#34;&gt;&lt;/li&gt;
+&lt;li&gt;如何更新样式&lt;/li&gt;
+&lt;li&gt;一般我们用JS来更新&lt;/li&gt;
+&lt;li&gt;比如div.style.background = &amp;lsquo;red&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;比如div.style.display =&#39;none&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;比如div.classList.add(&amp;lsquo;red&amp;rsquo;)&lt;/li&gt;
+&lt;li&gt;比如div.remove()直接删除节点&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>《浅析 URL》</title>
+      <link>http://localhost:1313/post/url/</link>
+      <pubDate>Thu, 30 Apr 2020 14:01:36 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/url/</guid>
+      
+        <description>&lt;h1 id=&#34;url是什么&#34;&gt;URL是什么&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;协议+域名或IP+端口+路径+查询字符点+锚点&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;什么是ip&#34;&gt;什么是IP&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;只要你在互联网中 你就有至少一个IP&lt;/li&gt;
+&lt;li&gt;IP分为内网和外网&lt;/li&gt;
+&lt;li&gt;如何获取外网 你从电信租用宽带 在买个路由器  只要路由器连上电信的服务器 那么路由器就会有一个外网 比如14.17.32.211 这就是一个外网 就是你在互联网的地址&lt;/li&gt;
+&lt;li&gt;内网就是你路由器在你家创建一个内网 这个IP是192.168.23.2 然后路由器会给你每一个内网中的设备分配一个不同的IP  如电脑192.168.1.11 手机是192.168，1.12&lt;/li&gt;
+&lt;li&gt;路由器的功能&lt;/li&gt;
+&lt;li&gt;现在路由器有两个IP 一个外网IP 一个内网IP 内网IP中的设备可以互相访问 但不能直接访问外网 内网设备想要访问外网 就必须经过路由器中转 外网设备想要把内容送到内网 就必须通过路由器 也就是说内网和外网就像两个隔绝的空间  无法互通 联通点就是路由器&lt;/li&gt;
+&lt;li&gt;j个特殊的IP&lt;/li&gt;
+&lt;li&gt;127.0.0.1  localhost 通过hosts指定为自己 0.0.0.0表示设备&lt;/li&gt;
+&lt;li&gt;IP有了还需要什么 端口&lt;/li&gt;
+&lt;li&gt;一台机器可以提供很多服务&lt;/li&gt;
+&lt;li&gt;每个服务一个号码 这个号码叫做端口号 post&lt;/li&gt;
+&lt;li&gt;一台机器可以提供不同的服务 要提供HTTP服务最好使用80端口 要提供HTTPS服务最好使用443端口 要提供FTP服务最好使用21端口  一共有65535个端口&lt;/li&gt;
+&lt;li&gt;端口使用还有什么规则 0到1023 你只有拥有管理员权限后 才可以使用1024端口 比如http-server 默认使用8080端口 一个端口被占用了 你就只有使用别的端口&lt;/li&gt;
+&lt;li&gt;域名是什么 qq.com  域名就是对IP的别称&lt;/li&gt;
+&lt;li&gt;一个域名可以对应不同的IP 这个叫均衡负载 防止一台机器扛不住 一个IP可以对应不同的域名 这个叫共享主机&lt;/li&gt;
+&lt;li&gt;域名和IP是怎么样对应的&lt;/li&gt;
+&lt;li&gt;通过Chrome浏览器回向电信 联通 提供DNS的服务器 询问网址对应什么IP  电信 和联通会回答一个IP 然后Chrome才会想到对应IP 80/433端口 请求内容查看网址首页&lt;/li&gt;
+&lt;li&gt;为什么是89或者443端口&lt;/li&gt;
+&lt;li&gt;服务器默认的用80 提供http服务&lt;/li&gt;
+&lt;li&gt;服务器默认的用443 提供https服务&lt;/li&gt;
+&lt;li&gt;com是顶级域名 xiedaimala.com是二级域名 俗称一级域名  &lt;a href=&#34;http://www.xiedaimala.com&#34;&gt;www.xiedaimala.com&lt;/a&gt;是三级域名 俗称 二级域名&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
       

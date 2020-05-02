@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>开博大吉 - 振振的博客</title>
+  <title>css基础 - 振振的博客</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -59,22 +59,22 @@
 
 
 
-<meta property="og:title" content="开博大吉" />
+<meta property="og:title" content="css基础" />
 <meta property="og:description" content="CSS知识总结 css基础 css布局 css定位 css动画 css的基础语法 css的层叠样式是什么 可以多次对同一个选择器进行样式声明 课可以用不同选" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/post/css/" />
 <meta property="article:published_time" content="2020-04-30T14:01:36+08:00" />
 <meta property="article:modified_time" content="2020-04-30T14:01:36+08:00" />
-<meta itemprop="name" content="开博大吉">
+<meta itemprop="name" content="css基础">
 <meta itemprop="description" content="CSS知识总结 css基础 css布局 css定位 css动画 css的基础语法 css的层叠样式是什么 可以多次对同一个选择器进行样式声明 课可以用不同选">
 <meta itemprop="datePublished" content="2020-04-30T14:01:36&#43;08:00" />
 <meta itemprop="dateModified" content="2020-04-30T14:01:36&#43;08:00" />
-<meta itemprop="wordCount" content="1505">
+<meta itemprop="wordCount" content="1756">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="开博大吉"/>
+<meta name="twitter:title" content="css基础"/>
 <meta name="twitter:description" content="CSS知识总结 css基础 css布局 css定位 css动画 css的基础语法 css的层叠样式是什么 可以多次对同一个选择器进行样式声明 课可以用不同选"/>
 
 <!--[if lte IE 9]>
@@ -337,7 +337,7 @@
           <article class="post bg-white">
     
     <header class="post-header">
-      <h1 class="post-title">开博大吉</h1>
+      <h1 class="post-title">css基础</h1>
       
       <div class="post-meta">
         <time datetime="2020-04-30" class="post-time">
@@ -444,6 +444,17 @@
 <li>transform:translateX(0=&gt;300px)</li>
 <li>直接修改会被合成 需要等一会修改 transition过度属性可以自动脑补中间帧</li>
 <li>比left性能好</li>
+</ul>
+<h5 id="css渲染原理">css渲染原理</h5>
+<ul>
+<li>浏览器渲染过程</li>
+<li>根据HTML构建HTML树DOM</li>
+<li>根据css构建css树(CSSOM)</li>
+<li>将两颗树合成一颗树(render tree)</li>
+<li>Layout布局(文档流 盒模型 计算大小和位置)</li>
+<li>Paint绘制(把边框颜色 文字颜色 阴影等画出来)</li>
+<li>Compose合成(根据层叠关系展示画面)
+<img src="707.png" alt="图片"></li>
 <li>有三种更新方法</li>
 <li>js/css&gt;样式&gt;布局&gt;绘制&gt;合成</li>
 <li>js/css&gt;样式&gt;绘制&gt;合成</li>
@@ -451,7 +462,14 @@
 <li>第一种，全走 div.remove()会触发当前消失 ,其他的元素relayout 第二种跳过layout 改变背景颜色 直接repaint+composite 第三种 跳过lalyout和paint 改变transform 只需compsoite 注意要看全屏查看效果</li>
 <li>fransfoum的四个常用功能 位移translate 缩放 scale 旋转rotate 倾斜skew</li>
 <li>经验 一般都需要配合transition过度</li>
-<li>inline元素不支持transition 先变成block</li>
+<li>inline元素不支持transition 先变成block
+<img src="6.png" alt="图片"></li>
+<li>如何更新样式</li>
+<li>一般我们用JS来更新</li>
+<li>比如div.style.background = &lsquo;red&rsquo;</li>
+<li>比如div.style.display ='none&rsquo;</li>
+<li>比如div.classList.add(&lsquo;red&rsquo;)</li>
+<li>比如div.remove()直接删除节点</li>
 </ul>
 
     </div>
@@ -487,22 +505,9 @@
       
       <nav class="post-nav">
         
-          <a class="prev" href="/post/url/">
-            
-            <i class="iconfont">
-              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
-  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="18" height="18">
-  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
-</svg>
-
-            </i>
-            <span class="prev-text nav-default">《浅析 URL》</span>
-            <span class="prev-text nav-mobile">上一篇</span>
-          </a>
         
-          <a class="next" href="/post/html%E7%9A%84%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/">
-            <span class="next-text nav-default">开博大吉</span>
+          <a class="next" href="/post/url/">
+            <span class="next-text nav-default">《浅析 URL》</span>
             <span class="prev-text nav-mobile">下一篇</span>
             
             <i class="iconfont">
