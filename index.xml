@@ -229,7 +229,7 @@
 &lt;li&gt;Layout布局(文档流 盒模型 计算大小和位置)&lt;/li&gt;
 &lt;li&gt;Paint绘制(把边框颜色 文字颜色 阴影等画出来)&lt;/li&gt;
 &lt;li&gt;Compose合成(根据层叠关系展示画面)
-&lt;img src=&#34;http://localhost:1313/static/images/707.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+(&lt;img src=&#34;https://ftp.bmp.ovh/imgs/2020/05/a53b6f36c9ab6216.png&#34; alt=&#34;&#34;&gt;)&lt;/li&gt;
 &lt;li&gt;有三种更新方法&lt;/li&gt;
 &lt;li&gt;js/css&amp;gt;样式&amp;gt;布局&amp;gt;绘制&amp;gt;合成&lt;/li&gt;
 &lt;li&gt;js/css&amp;gt;样式&amp;gt;绘制&amp;gt;合成&lt;/li&gt;
@@ -238,7 +238,7 @@
 &lt;li&gt;fransfoum的四个常用功能 位移translate 缩放 scale 旋转rotate 倾斜skew&lt;/li&gt;
 &lt;li&gt;经验 一般都需要配合transition过度&lt;/li&gt;
 &lt;li&gt;inline元素不支持transition 先变成block
-&lt;img src=&#34;http://localhost:1313/static/images/6.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+&lt;img src=&#34;https://ftp.bmp.ovh/imgs/2020/05/8d4a018477123c51.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
 &lt;li&gt;如何更新样式&lt;/li&gt;
 &lt;li&gt;一般我们用JS来更新&lt;/li&gt;
 &lt;li&gt;比如div.style.background = &amp;lsquo;red&amp;rsquo;&lt;/li&gt;
