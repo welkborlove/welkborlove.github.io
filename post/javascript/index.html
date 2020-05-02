@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>css基础 - 振振的博客</title>
+  <title>js - 振振的博客</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,7 +23,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="xianmin" />
-  <meta name="description" content="CSS知识总结 css基础 css布局 css定位 css动画 css的基础语法 css的层叠样式是什么 可以多次对同一个选择器进行样式声明 课可以用不同选" />
+  <meta name="description" content="javascript的总结 js是布兰登在1995年5月仅花了10天的时间把原型设计出来 最初命名为Mocha,网景公司为了让这门语言搭上jav" />
 
   <meta name="keywords" content="Hugo, theme, jane" />
 
@@ -35,7 +35,7 @@
 <meta name="generator" content="Hugo 0.69.2" />
 
 
-<link rel="canonical" href="http://localhost:1313/post/css/" />
+<link rel="canonical" href="http://localhost:1313/post/javascript/" />
 
 
 
@@ -59,23 +59,23 @@
 
 
 
-<meta property="og:title" content="css基础" />
-<meta property="og:description" content="CSS知识总结 css基础 css布局 css定位 css动画 css的基础语法 css的层叠样式是什么 可以多次对同一个选择器进行样式声明 课可以用不同选" />
+<meta property="og:title" content="js" />
+<meta property="og:description" content="javascript的总结 js是布兰登在1995年5月仅花了10天的时间把原型设计出来 最初命名为Mocha,网景公司为了让这门语言搭上jav" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/post/css/" />
-<meta property="article:published_time" content="2020-04-30T14:01:36+08:00" />
-<meta property="article:modified_time" content="2020-04-30T14:01:36+08:00" />
-<meta itemprop="name" content="css基础">
-<meta itemprop="description" content="CSS知识总结 css基础 css布局 css定位 css动画 css的基础语法 css的层叠样式是什么 可以多次对同一个选择器进行样式声明 课可以用不同选">
-<meta itemprop="datePublished" content="2020-04-30T14:01:36&#43;08:00" />
-<meta itemprop="dateModified" content="2020-04-30T14:01:36&#43;08:00" />
-<meta itemprop="wordCount" content="1756">
+<meta property="og:url" content="http://localhost:1313/post/javascript/" />
+<meta property="article:published_time" content="2020-05-01T14:01:36+08:00" />
+<meta property="article:modified_time" content="2020-05-01T14:01:36+08:00" />
+<meta itemprop="name" content="js">
+<meta itemprop="description" content="javascript的总结 js是布兰登在1995年5月仅花了10天的时间把原型设计出来 最初命名为Mocha,网景公司为了让这门语言搭上jav">
+<meta itemprop="datePublished" content="2020-05-01T14:01:36&#43;08:00" />
+<meta itemprop="dateModified" content="2020-05-01T14:01:36&#43;08:00" />
+<meta itemprop="wordCount" content="1636">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="css基础"/>
-<meta name="twitter:description" content="CSS知识总结 css基础 css布局 css定位 css动画 css的基础语法 css的层叠样式是什么 可以多次对同一个选择器进行样式声明 课可以用不同选"/>
+<meta name="twitter:title" content="js"/>
+<meta name="twitter:description" content="javascript的总结 js是布兰登在1995年5月仅花了10天的时间把原型设计出来 最初命名为Mocha,网景公司为了让这门语言搭上jav"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -337,11 +337,11 @@
           <article class="post bg-white">
     
     <header class="post-header">
-      <h1 class="post-title">css基础</h1>
+      <h1 class="post-title">js</h1>
       
       <div class="post-meta">
-        <time datetime="2020-04-30" class="post-time">
-          2020-04-30
+        <time datetime="2020-05-01" class="post-time">
+          2020-05-01
         </time>
         
         
@@ -361,12 +361,7 @@
   <div class="post-toc-content">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#css的基础语法">css的基础语法</a></li>
-    <li><a href="#css布局-两种">css布局 两种</a>
-      <ul>
-        <li><a href="#css定位">css定位</a></li>
-      </ul>
-    </li>
+    <li><a href="#javascript的10个设计缺陷">Javascript的10个设计缺陷</a></li>
   </ul>
 </nav>
   </div>
@@ -374,103 +369,106 @@
 
     
     <div class="post-content">
-      <h1 id="css知识总结">CSS知识总结</h1>
+      <h1 id="javascript的总结">javascript的总结</h1>
 <ul>
-<li>css基础</li>
-<li>css布局</li>
-<li>css定位</li>
-<li>css动画</li>
+<li>js是布兰登在1995年5月仅花了10天的时间把原型设计出来 最初命名为Mocha,网景公司为了让这门语言搭上java的热度改为javascript命名 这也是成为大众这门语言的诸多误解.</li>
+<li>javasceipt的基本特点如下</li>
+<li>是一种解析型脚本语言(代码不进行预諞译)</li>
+<li>主要用来HTML页面添加交互行为</li>
+<li>可以直接嵌入HTML页面,但写错单独js文件有利于解构和行为的分离</li>
+<li>javascript常用来完成以下任务</li>
+<li>嵌入动态文本于HTML页面</li>
+<li>对浏览器事件作出响应</li>
+<li>读写HTML元素</li>
+<li>在数据被提交到服务器之前验证数据</li>
+<li>检测访客的浏览器信息</li>
+<li>控制cookies，包括创建和修改等</li>
+<li>特性</li>
+<li>不同于服务器端脚本语言，例如PHP与ASP，JavaScript主要被作为客户端脚本语言在用户的浏览器上运行，不需要服务器的支持。所以在早期程序员比较青睐于JavaScript以减少对服务器的负担，而与此同时也带来另一个问题：安全性。而随着服务器变得强大，现在的程序员更喜欢运行于服务端的脚本以保证安全，但JavaScript仍然以其跨平台、容易上手等优势大行其道。同时，有些特殊功能（如AJAX）必须依赖JavaScript在客户端进行支持。随着引擎如V8和框架如Node.js的发展，及其事件驱动及异步IO等特性，JavaScript逐渐被用来编写服务器端程序。且在近几年中，Node.js的出世，让JavaScript也具有了一定的服务器功能，且在某些方面比PHP的效果更为显著。</li>
 </ul>
-<h2 id="css的基础语法">css的基础语法</h2>
+<h2 id="javascript的10个设计缺陷">Javascript的10个设计缺陷</h2>
+<ol>
+<li>不适合开发大型程序</li>
+</ol>
 <ul>
-<li>css的层叠样式是什么</li>
-<li>可以多次对同一个选择器进行样式声明 课可以用不同选择器对同一个元素进行样式声明  可以用多个文件进行声明</li>
-<li>css是艺术 你要用感性的思维理解</li>
-<li>语法很简单</li>
-<li>语法1:样式语法  选择器{属性:属性值;}</li>
-<li>注意事项 所有符号都是英文符号 如果写错了 浏览器会警告 区分大小写 最后一个分号可以省略但是最后不要</li>
-<li>语法2: at语法</li>
-<li>@charset &ldquo;UTF-8&rdquo;; @import url(2.css);
-@media (min-width: 100px) and (max-width: 200px)</li>
-<li>注意事项 @charset 必须放在第一行 前两个at必须以分号 结尾   charset是字符的意思  但UTF-8 是字符偏码</li>
-<li>如何调试css</li>
-<li>方法 使用vsCode Webstorm 看颜色 使用开发者工具看警告</li>
-<li>如何使用开发者工具 找到你脑中的标签 看它是否有选择器 看它的样式是否被划掉 看它是否有警</li>
-<li>Border调试法</li>
-<li>步骤  怀疑某个元素有问题 就给它加个border border没出现 说明选择器错了或语法错了 border出现了 看是不是符合预期  bug解决了就可以删掉  记住css的border调试法相当也js log</li>
-<li>新人的错误是 选择器拼错了 属性名拼错了  大小写错了 中文冒号 没加反花括号 没加单位</li>
-<li>CRM 学习方法 抄 运行 改</li>
-<li>理解文档流</li>
-<li>块 内联 内联块 两个盒子模型</li>
-<li>inline元素从左到右  到最右边才换行</li>
-<li>block元素从上到下 每一个另起一行</li>
-<li>inline-block也是ongoing左到右</li>
-<li>宽度</li>
-<li>liline宽度位内部niline元素的和 不能用width指定block默认自动计算宽度 可用width指定 inline-block 结合前两种</li>
-<li>高度</li>
-<li>inline高度有line-间接确定 跟height无关 block的高度右内部文档流元素觉得 可以设height  inline-block跟block 类似</li>
-<li>overflow溢出</li>
-<li>当内容大于容器</li>
-<li>可用overflow来设置是否显示滚动条</li>
-<li>auto是灵活设置 scroll是永远显示 hidden是直接溢出 visible是直接显示溢出 overflow分为overflow-x 和-y</li>
-<li>两种盒模型</li>
-<li>content-vox 内容盒 border-box是边框盒</li>
-<li>margin合拼</li>
-<li>父子margin 兄弟margin 合拼</li>
-<li>如何阻止合拼</li>
-<li>父子用padding/border挡住 overflow:hidden 挡住 display:flex,</li>
-<li>兄弟可用inline-block消除</li>
+<li>Javascript没有名称空间（namespace），很难模块化；没有如何将代码分布在多个文件的规范；允许同名函数的重复定义，后面的定义可以覆盖前面的定义，很不利于模块化加载</li>
 </ul>
-<h2 id="css布局-两种">css布局 两种</h2>
+<ol start="2">
+<li>非常小的标准库</li>
+</ol>
 <ul>
-<li>固定宽度布局  一般宽度位960 1000 1024px</li>
-<li>不固定宽度布局 主要靠文档流的原理来布局</li>
-<li>布局的两种思路</li>
-<li>从大到小 从小到大</li>
-<li>有什么布局 有float布局 flex布局 grid布局</li>
+<li>Javascript提供的标准函数库非常小，只能完成一些基本操作，很多功能都不具备。</li>
 </ul>
-<h3 id="css定位">css定位</h3>
+<ol start="3">
+<li>null和undefined</li>
+</ol>
 <ul>
-<li>css定位和布局区别就大了 布局是屏幕平面上的 定位是垂直于平幕的</li>
-<li>一个div的分层 内联子元素 浮动文素 块级子元素 border background</li>
-<li>新属性 - position 有五个值</li>
-<li>static 默认值 relative 相对值 absolute 绝对值 fixed 固定值 sticky 粘滞定位</li>
+<li>null属于对象（object）的一种，意思是该对象为空；undefined则是一种数据类型，表示未定义</li>
 </ul>
-<h4 id="css的动画">css的动画</h4>
+<p><code>typeof null; // object</code>
+<code>typeof undefined; // undefined</code></p>
+<p>两者非常容易混淆，但是含义完全不同。</p>
+<p><code>var foo;</code>
+<code>alert(foo == null); // true</code>
+<code>alert(foo == undefined); // true</code>
+<code>alert(foo === null); // false</code>
+<code>alert(foo === undefined); // true</code></p>
+<p>在编程实践中，null几乎没用，根本不应该设计它。</p>
+<ol start="4">
+<li>全局变量难以控制</li>
+</ol>
 <ul>
-<li>定义 由许多静止的画面(帧)以一定的速度连续播放 肉眼因视觉的残像生成错觉</li>
-<li>举个例子 将div从左往右移动 每过一段时间(setlnterval)将div移动以小段距离 直到目标地点</li>
-<li>用transform(变形)</li>
-<li>transform:translateX(0=&gt;300px)</li>
-<li>直接修改会被合成 需要等一会修改 transition过度属性可以自动脑补中间帧</li>
-<li>比left性能好</li>
+<li>Javascript的全局变量，在所有模块中都是可见的；任何一个函数内部都可以生成全局变量，这大大加剧了程序的复杂性</li>
 </ul>
-<h5 id="css渲染原理">css渲染原理</h5>
+<ol start="5">
+<li>自动插入行尾分号</li>
+</ol>
 <ul>
-<li>浏览器渲染过程</li>
-<li>根据HTML构建HTML树DOM</li>
-<li>根据css构建css树(CSSOM)</li>
-<li>将两颗树合成一颗树(render tree)</li>
-<li>Layout布局(文档流 盒模型 计算大小和位置)</li>
-<li>Paint绘制(把边框颜色 文字颜色 阴影等画出来)</li>
-<li>Compose合成(根据层叠关系展示画面)
-<img src="/static/images/707.png" alt=""></li>
-<li>有三种更新方法</li>
-<li>js/css&gt;样式&gt;布局&gt;绘制&gt;合成</li>
-<li>js/css&gt;样式&gt;绘制&gt;合成</li>
-<li>js/css&gt;样式&gt;合成</li>
-<li>第一种，全走 div.remove()会触发当前消失 ,其他的元素relayout 第二种跳过layout 改变背景颜色 直接repaint+composite 第三种 跳过lalyout和paint 改变transform 只需compsoite 注意要看全屏查看效果</li>
-<li>fransfoum的四个常用功能 位移translate 缩放 scale 旋转rotate 倾斜skew</li>
-<li>经验 一般都需要配合transition过度</li>
-<li>inline元素不支持transition 先变成block
-<img src="/static/images/6.png" alt=""></li>
-<li>如何更新样式</li>
-<li>一般我们用JS来更新</li>
-<li>比如div.style.background = &lsquo;red&rsquo;</li>
-<li>比如div.style.display ='none&rsquo;</li>
-<li>比如div.classList.add(&lsquo;red&rsquo;)</li>
-<li>比如div.remove()直接删除节点</li>
+<li>Javascript的所有语句，都必须以分号结尾。但是，如果你忘记加分号，解释器并不报错，而是为你自动加上分号。有时候，这会导致一些难以发现的错误。</li>
 </ul>
+<ol start="6">
+<li>加号运算符</li>
+</ol>
+<ul>
+<li>+号作为运算符，有两个含义，可以表示数字与数字的和，也可以表示字符与字符的连接。</li>
+</ul>
+<p><code>alert(1+10); // 11</code></p>
+<p><code>alert(&quot;1&quot;+&quot;10&quot;); // 110</code></p>
+<p>如果一个操作项是字符，另一个操作项是数字，则数字自动转化为字符。</p>
+<p><code>alert(1+&quot;10&quot;); // 110</code></p>
+<p><code>alert(&quot;10&quot;+1); // 101</code></p>
+<p>这样的设计，不必要地加剧了运算的复杂性，完全可以另行设置一个字符连接的运算符。</p>
+<ol start="7">
+<li>NaN  NaN是一种数字，表示超出了解释器的极限。它有一些很奇怪的特性：</li>
+</ol>
+<p><code>NaN === NaN; //false</code></p>
+<p><code>NaN !== NaN; //true</code></p>
+<p><code>alert( 1 + NaN ); // NaN1</code></p>
+<p>与其设计NaN，不如解释器直接报错，反而有利于简化程序。</p>
+<ol start="8">
+<li>数组和对象的区分</li>
+</ol>
+<ul>
+<li>由于Javascript的数组也属于对象（object），所以要区分一个对象到底是不是数组，相当麻烦。Douglas Crockford的代码是这样的：</li>
+</ul>
+<ol start="9">
+<li>== 和 ===</li>
+</ol>
+<ul>
+<li>==用来判断两个值是否相等。当两个值类型不同时，会发生自动转换，得到的结果非常不符合直觉。</li>
+<li>因此，推荐任何时候都使用&quot;===&rdquo;（精确判断）比较符。</li>
+</ul>
+<ol start="10">
+<li>基本类型的包装对象</li>
+</ol>
+<ul>
+<li>Javascript有三种基本数据类型：字符串、数字和布尔值。它们都有相应的建构函数，可以生成字符串对象、数字对象和布尔值对象。</li>
+<li>与基本数据类型对应的对象类型，作用很小，造成的混淆却很大。</li>
+</ul>
+<ol start="11">
+<li>既然Javascript有缺陷，数量还不少，那么它是不是一种很糟糕的语言？有没有前途？
+回答是Javascript并不算糟糕，相反它的编程能力很强大，前途很光明。</li>
+</ol>
 
     </div>
 
@@ -484,7 +482,7 @@
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
     <span class="item-content">
-      2020-04-30
+      2020-05-01
       
     </span>
   </p>
@@ -505,22 +503,9 @@
       
       <nav class="post-nav">
         
-          <a class="prev" href="/post/javascript/">
-            
-            <i class="iconfont">
-              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
-  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="18" height="18">
-  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
-</svg>
-
-            </i>
-            <span class="prev-text nav-default">js</span>
-            <span class="prev-text nav-mobile">上一篇</span>
-          </a>
         
-          <a class="next" href="/post/url/">
-            <span class="next-text nav-default">《浅析 URL》</span>
+          <a class="next" href="/post/css/">
+            <span class="next-text nav-default">css基础</span>
             <span class="prev-text nav-mobile">下一篇</span>
             
             <i class="iconfont">

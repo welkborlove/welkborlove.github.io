@@ -32,6 +32,117 @@
     </item>
     
     <item>
+      <title>js</title>
+      <link>http://localhost:1313/post/javascript/</link>
+      <pubDate>Fri, 01 May 2020 14:01:36 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/javascript/</guid>
+      
+        <description>&lt;h1 id=&#34;javascript的总结&#34;&gt;javascript的总结&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;js是布兰登在1995年5月仅花了10天的时间把原型设计出来 最初命名为Mocha,网景公司为了让这门语言搭上java的热度改为javascript命名 这也是成为大众这门语言的诸多误解.&lt;/li&gt;
+&lt;li&gt;javasceipt的基本特点如下&lt;/li&gt;
+&lt;li&gt;是一种解析型脚本语言(代码不进行预諞译)&lt;/li&gt;
+&lt;li&gt;主要用来HTML页面添加交互行为&lt;/li&gt;
+&lt;li&gt;可以直接嵌入HTML页面,但写错单独js文件有利于解构和行为的分离&lt;/li&gt;
+&lt;li&gt;javascript常用来完成以下任务&lt;/li&gt;
+&lt;li&gt;嵌入动态文本于HTML页面&lt;/li&gt;
+&lt;li&gt;对浏览器事件作出响应&lt;/li&gt;
+&lt;li&gt;读写HTML元素&lt;/li&gt;
+&lt;li&gt;在数据被提交到服务器之前验证数据&lt;/li&gt;
+&lt;li&gt;检测访客的浏览器信息&lt;/li&gt;
+&lt;li&gt;控制cookies，包括创建和修改等&lt;/li&gt;
+&lt;li&gt;特性&lt;/li&gt;
+&lt;li&gt;不同于服务器端脚本语言，例如PHP与ASP，JavaScript主要被作为客户端脚本语言在用户的浏览器上运行，不需要服务器的支持。所以在早期程序员比较青睐于JavaScript以减少对服务器的负担，而与此同时也带来另一个问题：安全性。而随着服务器变得强大，现在的程序员更喜欢运行于服务端的脚本以保证安全，但JavaScript仍然以其跨平台、容易上手等优势大行其道。同时，有些特殊功能（如AJAX）必须依赖JavaScript在客户端进行支持。随着引擎如V8和框架如Node.js的发展，及其事件驱动及异步IO等特性，JavaScript逐渐被用来编写服务器端程序。且在近几年中，Node.js的出世，让JavaScript也具有了一定的服务器功能，且在某些方面比PHP的效果更为显著。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;javascript的10个设计缺陷&#34;&gt;Javascript的10个设计缺陷&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;不适合开发大型程序&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Javascript没有名称空间（namespace），很难模块化；没有如何将代码分布在多个文件的规范；允许同名函数的重复定义，后面的定义可以覆盖前面的定义，很不利于模块化加载&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;非常小的标准库&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Javascript提供的标准函数库非常小，只能完成一些基本操作，很多功能都不具备。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;null和undefined&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;null属于对象（object）的一种，意思是该对象为空；undefined则是一种数据类型，表示未定义&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;typeof null; // object&lt;/code&gt;
+&lt;code&gt;typeof undefined; // undefined&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;两者非常容易混淆，但是含义完全不同。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;var foo;&lt;/code&gt;
+&lt;code&gt;alert(foo == null); // true&lt;/code&gt;
+&lt;code&gt;alert(foo == undefined); // true&lt;/code&gt;
+&lt;code&gt;alert(foo === null); // false&lt;/code&gt;
+&lt;code&gt;alert(foo === undefined); // true&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;在编程实践中，null几乎没用，根本不应该设计它。&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;全局变量难以控制&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Javascript的全局变量，在所有模块中都是可见的；任何一个函数内部都可以生成全局变量，这大大加剧了程序的复杂性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;自动插入行尾分号&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Javascript的所有语句，都必须以分号结尾。但是，如果你忘记加分号，解释器并不报错，而是为你自动加上分号。有时候，这会导致一些难以发现的错误。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;加号运算符&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;+号作为运算符，有两个含义，可以表示数字与数字的和，也可以表示字符与字符的连接。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;alert(1+10); // 11&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;alert(&amp;quot;1&amp;quot;+&amp;quot;10&amp;quot;); // 110&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;如果一个操作项是字符，另一个操作项是数字，则数字自动转化为字符。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;alert(1+&amp;quot;10&amp;quot;); // 110&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;alert(&amp;quot;10&amp;quot;+1); // 101&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;这样的设计，不必要地加剧了运算的复杂性，完全可以另行设置一个字符连接的运算符。&lt;/p&gt;
+&lt;ol start=&#34;7&#34;&gt;
+&lt;li&gt;NaN  NaN是一种数字，表示超出了解释器的极限。它有一些很奇怪的特性：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;NaN === NaN; //false&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;NaN !== NaN; //true&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;alert( 1 + NaN ); // NaN1&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;与其设计NaN，不如解释器直接报错，反而有利于简化程序。&lt;/p&gt;
+&lt;ol start=&#34;8&#34;&gt;
+&lt;li&gt;数组和对象的区分&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;由于Javascript的数组也属于对象（object），所以要区分一个对象到底是不是数组，相当麻烦。Douglas Crockford的代码是这样的：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;9&#34;&gt;
+&lt;li&gt;== 和 ===&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;==用来判断两个值是否相等。当两个值类型不同时，会发生自动转换，得到的结果非常不符合直觉。&lt;/li&gt;
+&lt;li&gt;因此，推荐任何时候都使用&amp;quot;===&amp;rdquo;（精确判断）比较符。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;10&#34;&gt;
+&lt;li&gt;基本类型的包装对象&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Javascript有三种基本数据类型：字符串、数字和布尔值。它们都有相应的建构函数，可以生成字符串对象、数字对象和布尔值对象。&lt;/li&gt;
+&lt;li&gt;与基本数据类型对应的对象类型，作用很小，造成的混淆却很大。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;11&#34;&gt;
+&lt;li&gt;既然Javascript有缺陷，数量还不少，那么它是不是一种很糟糕的语言？有没有前途？
+回答是Javascript并不算糟糕，相反它的编程能力很强大，前途很光明。&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+      
+    </item>
+    
+    <item>
       <title>css基础</title>
       <link>http://localhost:1313/post/css/</link>
       <pubDate>Thu, 30 Apr 2020 14:01:36 +0800</pubDate>
@@ -118,7 +229,7 @@
 &lt;li&gt;Layout布局(文档流 盒模型 计算大小和位置)&lt;/li&gt;
 &lt;li&gt;Paint绘制(把边框颜色 文字颜色 阴影等画出来)&lt;/li&gt;
 &lt;li&gt;Compose合成(根据层叠关系展示画面)
-&lt;img src=&#34;707.png&#34; alt=&#34;图片&#34;&gt;&lt;/li&gt;
+&lt;img src=&#34;http://localhost:1313/static/images/707.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
 &lt;li&gt;有三种更新方法&lt;/li&gt;
 &lt;li&gt;js/css&amp;gt;样式&amp;gt;布局&amp;gt;绘制&amp;gt;合成&lt;/li&gt;
 &lt;li&gt;js/css&amp;gt;样式&amp;gt;绘制&amp;gt;合成&lt;/li&gt;
@@ -127,7 +238,7 @@
 &lt;li&gt;fransfoum的四个常用功能 位移translate 缩放 scale 旋转rotate 倾斜skew&lt;/li&gt;
 &lt;li&gt;经验 一般都需要配合transition过度&lt;/li&gt;
 &lt;li&gt;inline元素不支持transition 先变成block
-&lt;img src=&#34;6.png&#34; alt=&#34;图片&#34;&gt;&lt;/li&gt;
+&lt;img src=&#34;http://localhost:1313/static/images/6.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
 &lt;li&gt;如何更新样式&lt;/li&gt;
 &lt;li&gt;一般我们用JS来更新&lt;/li&gt;
 &lt;li&gt;比如div.style.background = &amp;lsquo;red&amp;rsquo;&lt;/li&gt;
