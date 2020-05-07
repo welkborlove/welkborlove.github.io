@@ -6,15 +6,15 @@
     <description>Recent content in Posts on 振振的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 07 May 2020 14:01:36 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 06 May 2020 14:01:36 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>开博大吉</title>
+      <title>JS对象</title>
       <link>http://localhost:1313/post/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</link>
-      <pubDate>Thu, 07 May 2020 14:01:36 +0800</pubDate>
+      <pubDate>Wed, 06 May 2020 14:01:36 +0800</pubDate>
       
       <guid>http://localhost:1313/post/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</guid>
       <description>JS对象 七钟数据类型 number string boo symbol null undefined object 五个falsy值 null undefined 0 NaN &amp;lsquo;&#39;(空字符串) 对象Object 对象 定义 无序的数据集合 键值对的集合 写法</description>
