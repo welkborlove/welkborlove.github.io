@@ -32,6 +32,153 @@
     </item>
     
     <item>
+      <title>开博大吉</title>
+      <link>http://localhost:1313/post/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</link>
+      <pubDate>Thu, 07 May 2020 14:01:36 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</guid>
+      
+        <description>&lt;h1 id=&#34;js对象&#34;&gt;JS对象&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;七钟数据类型  number string boo symbol null undefined object&lt;/li&gt;
+&lt;li&gt;五个falsy值 null undefined 0 NaN &amp;lsquo;&#39;(空字符串)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;对象object&#34;&gt;对象Object&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;对象&lt;/li&gt;
+&lt;li&gt;定义&lt;/li&gt;
+&lt;li&gt;无序的数据集合&lt;/li&gt;
+&lt;li&gt;键值对的集合&lt;/li&gt;
+&lt;li&gt;写法&lt;/li&gt;
+&lt;li&gt;&lt;code&gt; let obj = { &#39;name&#39;: &#39;frank&#39;, &#39;age&#39;:18 }&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;let obj = new Object({&#39;name&#39;: &#39;frank&#39;})&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;console.log({&#39;name&#39;: &#39;frank&#39;, &#39;age&#39;:18})&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;细节&lt;/li&gt;
+&lt;li&gt;键名是字符串 不是标识符 可以包含任意字符&lt;/li&gt;
+&lt;li&gt;引号可省略 省略之后就只能写标识符&lt;/li&gt;
+&lt;li&gt;就算引号省略了 键名也是字符串(重要)&lt;/li&gt;
+&lt;li&gt;属性名&lt;/li&gt;
+&lt;li&gt;每个key都是对象的属性名(property)&lt;/li&gt;
+&lt;li&gt;属性值&lt;/li&gt;
+&lt;li&gt;每一个value都是对象的属性值&lt;/li&gt;
+&lt;li&gt;奇怪的属性名 所有的属性名会自动变成字符串&lt;/li&gt;
+&lt;li&gt;细节 Object.keys(obj)可以得到obj的所有key&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;变量作属性名&#34;&gt;变量作属性名&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;如何用变量做属性名&lt;/li&gt;
+&lt;li&gt;之前都是用常量做属性名&lt;/li&gt;
+&lt;li&gt;let p1 = &amp;lsquo;name&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;let obj + {p1: &amp;lsquo;frank&amp;rsquo;}这样写，属性名为&amp;rsquo;p1&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;let obj = {[p1]:&amp;lsquo;frank&amp;rsquo;}这样写，属性名为&amp;rsquo;name&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;对比&lt;/li&gt;
+&lt;li&gt;不加[]的属性名会自动变成字符串&lt;/li&gt;
+&lt;li&gt;加了[]则会当做变量求值&lt;/li&gt;
+&lt;li&gt;值如果不是字符串 则会自动变成字符串&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;heading&#34;&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;隐藏属性&lt;/li&gt;
+&lt;li&gt;JS中每一个对象都有一个隐藏的属性&lt;/li&gt;
+&lt;li&gt;这个隐藏属性储存着共有属性组成的对象的地址&lt;/li&gt;
+&lt;li&gt;也就是说 隐藏属性储存着原型的地址&lt;/li&gt;
+&lt;li&gt;代码示例&lt;/li&gt;
+&lt;li&gt;let obj = {}&lt;/li&gt;
+&lt;li&gt;obj.toString()//居然不报错&lt;/li&gt;
+&lt;li&gt;因为obj的隐藏属性对应的对象上toString()&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;增删改查&#34;&gt;增删改查&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;delete obj.xxx或delete obj[&amp;lsquo;xxx&amp;rsquo;]&lt;/li&gt;
+&lt;li&gt;即可删除obj的xxx属性&lt;/li&gt;
+&lt;li&gt;请区分 属性值为undefined 和不含属性名&lt;/li&gt;
+&lt;li&gt;不含属性名&lt;/li&gt;
+&lt;li&gt;&amp;lsquo;xxx&amp;rsquo; in obj ===false&lt;/li&gt;
+&lt;li&gt;含属性名 但是值为undefined&lt;/li&gt;
+&lt;li&gt;&amp;lsquo;xxx&amp;rsquo; in obj &amp;amp;&amp;amp;obj.xxx === undefined&lt;/li&gt;
+&lt;li&gt;注意obj.xxx === undefined&lt;/li&gt;
+&lt;li&gt;不能断定&amp;rsquo;xxx&amp;rsquo;是否为obj的属性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;查看所有属性&#34;&gt;查看所有属性&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;查看自身所有属性&lt;/li&gt;
+&lt;li&gt;Object.keys(obj)&lt;/li&gt;
+&lt;li&gt;查看自身+共有属性&lt;/li&gt;
+&lt;li&gt;console.dir(obj)&lt;/li&gt;
+&lt;li&gt;或者自己依次用Object.keys打印&lt;code&gt;obj.__proto__&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;判断一个属性是自身的还是共有的&lt;/li&gt;
+&lt;li&gt;obj.hasOwnproperty(&amp;lsquo;toString&amp;rsquo;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;原型&#34;&gt;原型&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;每个对象都有原型&lt;/li&gt;
+&lt;li&gt;原型里存着对象的共有属性&lt;/li&gt;
+&lt;li&gt;比如obj的原型就是一个对象&lt;/li&gt;
+&lt;li&gt;obj.&lt;code&gt;__proto__&lt;/code&gt;存着这个对象的地址&lt;/li&gt;
+&lt;li&gt;这个对象里有toString/constructor/valueOf等属性&lt;/li&gt;
+&lt;li&gt;对象的原型也是对象&lt;/li&gt;
+&lt;li&gt;所有对象的原型也是对象&lt;/li&gt;
+&lt;li&gt;obj = {}的原型即为所有对象的原型&lt;/li&gt;
+&lt;li&gt;这个原型包含所有对象的共有属性 是对象的根&lt;/li&gt;
+&lt;li&gt;这个原型也有原型 是null&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;查看属性&#34;&gt;查看属性&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;两种方法查看属性&lt;/li&gt;
+&lt;li&gt;中括号语法 obj[&amp;lsquo;key&amp;rsquo;]&lt;/li&gt;
+&lt;li&gt;点语法 obj .key&lt;/li&gt;
+&lt;li&gt;坑新人语法 obj[key]//变量 key的值一般不为&amp;rsquo;key&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;请优先你 让你以为key不是字符串&lt;/li&gt;
+&lt;li&gt;等你确定不会弄混两种语法 再改用点语法&lt;/li&gt;
+&lt;li&gt;obj.name 等于obj[&amp;lsquo;name&amp;rsquo;]&lt;/li&gt;
+&lt;li&gt;obj.name不等于obj[name]&lt;/li&gt;
+&lt;li&gt;这里的name是字符串 而不是变量&lt;/li&gt;
+&lt;li&gt;let name = &amp;lsquo;frank&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;obj[name]等于obj[&amp;lsquo;frank&amp;rsquo;]而不是obj[&amp;lsquo;name&amp;rsquo;]和obj.name&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;修改隐藏属性&#34;&gt;修改隐藏属性&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;不推荐使用&lt;code&gt;__proto__&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;let obj = {name:&amp;lsquo;frank&amp;rsquo;}&lt;/li&gt;
+&lt;li&gt;let obj2 = {name:&amp;lsquo;jack&amp;rsquo;}&lt;/li&gt;
+&lt;li&gt;let common = {kind: &amp;lsquo;human&amp;rsquo;}&lt;/li&gt;
+&lt;li&gt;obj.&lt;code&gt;__prtot__&lt;/code&gt; = common&lt;/li&gt;
+&lt;li&gt;推荐使用Object.create&lt;/li&gt;
+&lt;li&gt;let obj = Object.create(common)&lt;/li&gt;
+&lt;li&gt;obj.name = &amp;lsquo;frank&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;let obj2 = Object.create(common)&lt;/li&gt;
+&lt;li&gt;obj2.name = &amp;lsquo;jack&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;规范大概的意思是 要改就一开始就改 别后来再改&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;总结&#34;&gt;总结&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;删&lt;/li&gt;
+&lt;li&gt;delete obj[&amp;lsquo;name&amp;rsquo;]&lt;/li&gt;
+&lt;li&gt;&amp;lsquo;name&amp;rsquo; in obj//false&lt;/li&gt;
+&lt;li&gt;obj.hasOwnProperty(&amp;lsquo;name&amp;rsquo;)//false&lt;/li&gt;
+&lt;li&gt;查&lt;/li&gt;
+&lt;li&gt;Object.keys(obj)&lt;/li&gt;
+&lt;li&gt;console.dir(obj)&lt;/li&gt;
+&lt;li&gt;obj[&amp;lsquo;name&amp;rsquo;]//记住这里的name是字符串&lt;/li&gt;
+&lt;li&gt;obj[name]//记住这里的name是变量&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;改&#34;&gt;改&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;改自身obj[&amp;lsquo;name&amp;rsquo;] = &amp;lsquo;jack&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;批量改自身Object.assign(obj,{age:18,&amp;hellip;&amp;hellip;})&lt;/li&gt;
+&lt;li&gt;改共有属性obj.&lt;code&gt;__proto__&lt;/code&gt;[&amp;lsquo;toString&amp;rsquo;] =&#39;xxx&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;改共有属性Object.prototype[&amp;lsquo;toString&amp;rsquo;] = &amp;lsquo;xxx&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;改原型obj.&lt;code&gt;__prtot__&lt;/code&gt; = common&lt;/li&gt;
+&lt;li&gt;改原型let obj =Object.create(common)&lt;/li&gt;
+&lt;li&gt;注:所有&lt;code&gt;__prtot__&lt;/code&gt;的代码都是强烈不推荐写&lt;/li&gt;
+&lt;li&gt;增&lt;/li&gt;
+&lt;li&gt;基本同上 有属性就改 没属性就增加&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      
+    </item>
+    
+    <item>
       <title>JS的基本语法</title>
       <link>http://localhost:1313/post/js%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</link>
       <pubDate>Mon, 04 May 2020 14:01:36 +0800</pubDate>
