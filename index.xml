@@ -32,6 +32,44 @@
     </item>
     
     <item>
+      <title>函数的执行时机</title>
+      <link>http://localhost:1313/post/js-%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/</link>
+      <pubDate>Wed, 13 May 2020 14:01:36 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/js-%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/</guid>
+      
+        <description>&lt;h1 id=&#34;如下代码为什么会打印-6个6&#34;&gt;如下代码为什么会打印 6个6&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;  let i = 0
+  for(i = 0; i&amp;lt;6; i++){
+  setTimeout(()=&amp;gt;{
+    console.log(i)
+  },0)
+  }
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;这跟 JS 函数的执行机制有关， 要知道 setTimeout 是一个异步的函数,那么这段代码的执行就变成了，先走完整个循环，这时 i 已经变成了 6，才开始执行6个console.log(i)，所以最终只会打印出 6个6.&lt;/p&gt;
+&lt;h2 id=&#34;那有什么方法让这个函数打印-012345-吗&#34;&gt;那有什么方法让这个函数打印 0、1、2、3、4、5 吗？&lt;/h2&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;有 需要稍稍改变一下就 ok&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt; for(let i = 0; i &amp;lt; 6; ++i) {
+	setTimeout(() =&amp;gt; {
+		console.log(i)
+	}, 0)
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;还有另外的方法&#34;&gt;还有另外的方法&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;for (var i=0; i&amp;lt;6; ++i) {
+	setTimeout(function(i){
+		console.log(i)
+	}, 0, i)
+}
+&lt;/code&gt;&lt;/pre&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>JS对象</title>
       <link>http://localhost:1313/post/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</link>
       <pubDate>Wed, 06 May 2020 14:01:36 +0800</pubDate>
